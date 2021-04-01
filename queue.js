@@ -6,7 +6,7 @@ function queue(){
   
   return {
 
-    //enqueue(){},
+    enqueue(item){queue.unshift(item)},
     //dequeue(){},
     //peek(){},
     //length(){},
@@ -14,6 +14,5 @@ function queue(){
 
   }
 }
-
 
 const q = queue();
