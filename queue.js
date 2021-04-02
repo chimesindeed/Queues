@@ -8,7 +8,11 @@ function queue(){
 
     enqueue(item){queue.unshift(item)},
     dequeue(){return queue.pop()},
-    //peek(){},
+    peek(){
+      const nextInQueue = queue[queue.length-1]
+
+      return nextInQueue
+    },
     //length(){},
     //isEmpty(){}
 
