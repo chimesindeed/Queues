@@ -7,17 +7,19 @@ function queue(){
   return {
 
     enqueue(item){queue.unshift(item)},
+    
     dequeue(){return queue.pop()},
+    
     peek(){
       const nextInQueue = queue[queue.length-1]
 
       return nextInQueue
     },
+    
     get length(){ return q.length},
-    //isEmpty(){}
-
+    
+    isEmpty(){return q.length===0}
   }
 }
 
 const q = queue();
-q.dequeue
