@@ -13,10 +13,11 @@ function queue(){
 
       return nextInQueue
     },
-    //length(){},
+    get length(){ return q.length},
     //isEmpty(){}
 
   }
 }
 
 const q = queue();
+q.dequeue
