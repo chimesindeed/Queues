@@ -7,7 +7,7 @@ function queue(){
   return {
 
     enqueue(item){queue.unshift(item)},
-    //dequeue(){},
+    dequeue(){return queue.pop()},
     //peek(){},
     //length(){},
     //isEmpty(){}
