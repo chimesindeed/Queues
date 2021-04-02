@@ -6,9 +6,9 @@ function queue(){
   
   return {
 
-    enqueue(item){queue.unshift(item)},
+    enqueue(item) {queue.unshift(item)},
     
-    dequeue(){return queue.pop()},
+    dequeue() {return queue.pop()},
     
     peek(){
       const nextInQueue = queue[queue.length-1]
@@ -16,10 +16,20 @@ function queue(){
       return nextInQueue
     },
     
-    get length(){ return q.length},
+    get length() {return queue.length},
     
-    isEmpty(){return q.length===0}
+    isEmpty() {return q.length===0}
   }
 }
 
 const q = queue();
+see(q.length)  // getter functions are called as attributes not functions
+
+// see("Should be true: ----> " + q.isEmpty())
+// q.enqueue('first item')
+// q.enqueue('second item')
+// q.enqueue('third item')
+// see("should be 3: ----> " + q.length)
+// see("should be first item: ----> " + q.peek())
+
+
